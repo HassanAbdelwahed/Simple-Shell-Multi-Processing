@@ -2,7 +2,7 @@
 
 ![Shell](shell.png)
 
-## 2. Problem Statement
+## 1. Problem Statement
 
 implement a Unix shell program. A shell is simply a program that conveniently allows you to run other programs. Read up on your favorite shell to see what it does.
 
@@ -48,11 +48,8 @@ shell support the following commands:
         * export y="Hello world"
         * echo "$y" => Hello world
 
-| ![System Monitor](sysmonitor.png) |
-|:--:|
-| *Figure 1 Firefox, Calculator and Gedit are child processes to the SimpleShell process** |
 
-## 3. Problem Description
+## 2. Problem Description
 
 1. command shell take the user command and its parameter(s), i.e., “ls” and “–l” in this example, and convert them into C strings. (Recall that a C string terminates with a null string, i.e., \0.)
 2. The command shell create a child process via **fork()**.

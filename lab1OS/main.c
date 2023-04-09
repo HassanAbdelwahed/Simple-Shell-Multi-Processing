@@ -19,7 +19,7 @@ static void handler(int sig) {
     FILE *fptr;
     
     while ((pid = waitpid(-1, &status, WNOHANG)) > 0) {
-        fptr = fopen("/home/hassan/Desktop/process.txt","a+");
+        fptr = fopen("/home/hassan/Documents/lab1OS/process.txt","a+");
         fprintf(fptr,"Child terminated\n");
         fclose(fptr);
     }
